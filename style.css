@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+/* base width 1280 */
+body{
+    margin: 0px;
+    padding: 0px;
+    background: #F9F4F4;
+}
+
+.abs {
+    position: absolute;
+}
+
+#login__text {
+    display: block;
+    position: absolute;
+    font-size: 3.5em;
+    font-weight: bolder;
+    font-family:'Montserrat', sans-serif;
+    top: -1.3em;
+    left: 1.2em;
+    letter-spacing: 0.25em;
+    text-shadow: 14px 24px 35px;
+
+}
+.login-box{
+    display: block;
+    position: relative;
+    width: 60%;
+    height: 26em;
+    background: transparent;
+    z-index: 2;
+    /* margin-left: 5%;
+    margin-top: 32%; */
+    bottom: -10em;
+    left: 2em;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+ .blend_layer {
+    display: block;
+    position: absolute;
+    width: 60%;
+    height: 26em;
+    background-color: #ffffff;
+    z-index: 1;
+    /* margin-left: 5%;
+    margin-top: 32%; */
+    bottom: 5.5em;
+    left: 2em;
+    mix-blend-mode: color-burn;
+    box-shadow: 19px 28px 59px grey ;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.login-box form{
+    padding-top: 3.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-box form .sp{
+    display: block;
+    width: 2em;
+    height: 1em;
+}
+
+.login-box form input[type=text]{
+    height: 2em;
+    display: block;
+    mix-blend-mode: normal;
+    background-color: #ffffff;
+    font-family:'Montserrat', sans-serif;
+    font-size: 1.5em;
+    border: solid grey 2px;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+
+.login-box form .checkbox__inline{
+    display: flex;
+    flex-direction: row;
+    letter-spacing: 10px;
+}
+
+
+.login-box form button{
+    display:block;
+    background: none;
+    border: 4px solid black;
+    border-radius: 7px;
+    position: relative;
+    align-self: center;
+    font-family:'Montserrat', sans-serif;
+    font-size: 1.5em;
+    color: #ffffff;
+    font-weight: bold;
+    padding-left: 1%;
+    white-space: nowrap;
+    width: 36%;
+    height: 2em;
+    z-index: 4;
+    margin-left: 1em;
+
+}
+
+.login-box form button span{
+    color:black;
+    padding-left: 0.2em;
+}
+
+.login-box form button::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 70%;
+    height: 2em;
+    top: -0.17em;
+    left: -0.2em;
+    background: black;
+    border-radius: 7px;
+    z-index: -1;
+}
+
+.login-box label {
+    font-family:'Montserrat', sans-serif;
+    color: #00000067;
+    font-size: 0.7em;
+
+}
+
+.login-box a {
+    text-decoration: none;
+    letter-spacing: 0.1em; 
+    font-family:'Montserrat', sans-serif; 
+    color: #0d3f9b;
+    position: absolute;
+    bottom: 7.5em;
+    font-size: 0.9em;
+}
+
+
+header{
+    position: relative;
+    display: flex;
+    /* margin: 1.3em 0em 0em 0.3em; */
+    margin: 3% 0% 0% 3%;
+}
+
+header .logo  {
+    background: url(./images/Component\ 2\ –\ 2.png);
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    top: 5px;
+}
+
+header span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4em;
+    font-weight: bolder;
+    padding-left: 0.3em;
+}
+
+/* Bellow are each companent gap separted */
+.bg-background {
+    top: 0em;
+    right: 0em;
+    display: block;
+    background: url(./images/Medicine\ on\ Orange\ background.jpg);
+    width:54%;
+    height: 100%;
+    margin-right: 0.32em;
+    background-size: cover;
+    background-position: 9% 2%;
+    overflow-x: hidden;
+    z-index: -1;
+}
+
+
+
+.social{
+    display: none;
+}
+
+
+
+.watermark{
+    display:inline-block;
+    top: 0.5em;
+    left: 0.3em;
+    font-family: 'Montserrat', sans-serif;
+    opacity: 0.04;
+    z-index: -2;
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+    font-size: 3em;
+    overflow-y: hidden;
+}
+
+
+
+.bg__slide__button {
+    display: block;
+    background-color: #F9F4F4;
+    bottom: 2.5em;
+    width: 1em;
+    right: 0em;
+    margin-right: 0.32em;
+    height: 11.5em;
+}
+
+.bg__slide__button ul {
+    margin: 0em;
+    padding-left: 35px;
+}
+
+.bg__slide__button ul li {
+    list-style-type:circle;
+    font-size: 2.5em;
+    margin: 0px;
+}
+.bg__slide__button ul li.active{
+    list-style-type: disc;
+}
+
+
+
+
+.bottom{
+    display: block;
+    bottom: 0em;
+    left: 0em;
+}
+.bottom .one{
+    position: inherit;
+    bottom: 0em;
+    left: 0em;
+    width: calc(100px/2);
+    height: calc(100px/2);
+    background-color: rgb(206, 204, 204);
+}
+.bottom .two{
+    position: inherit;
+    bottom: 3em;
+    left: 3em;
+    width: calc(100px/2);
+    height: calc(100px/2);
+    /* background-color: #E9E5E5; */
+    background-color: rgb(206, 204, 204);
+}
+.bottom .three{
+    position: inherit;
+    bottom: 0em;
+    left: 6em;
+    width: calc(100px/2);
+    height: calc(100px/2);
+    /* background-color: #E9E5E5; */
+    background-color: rgb(206, 204, 204);
+}
+
+/* 708px */
+@media(min-width:650px){
+    #login__text{
+        font-size: 4em;
+        top: -1.5em;
+        left: 0.8em;
+    }
+
+    .watermark{
+        left: 1.1em; 
+        top: -0.4em;
+        font-size: 3.7em;
+    }
+
+    .login-box{
+        bottom: -9em;
+        left: 4.3em;
+        width:50%;
+    }
+    .blend_layer{
+        bottom:7em ;
+        left: 4.3em;
+        width: 50%;
+    }
+
+    .login-box form button{
+        margin-left: 1.8em;
+    }
+
+    .bottom .one{
+        width: calc(100px/1.5);
+        height: calc(100px/1.5);
+    }
+    .bottom .two{
+        position: inherit;
+        bottom: 4em;
+        left: 4em;
+        width: calc(100px/1.5);
+        height: calc(100px/1.5);
+    }
+    .bottom .three{
+        position: inherit;
+        bottom: 0em;
+        left: 8em;
+        width: calc(100px/1.5);
+        height: calc(100px/1.5);
+    }
+    .bg-background{
+        background-position: 1% 1%;
+    }
+
+    .social{
+        display: flex;
+        flex-direction: column;
+        bottom: 2.5em;
+        left: -0.5em;
+    }
+    .social li{
+        list-style: none;
+        padding-bottom: 1em;
+    }
+    .social li img {
+        width: 1em;
+        height: 1em;
+    }
+    /* .social .spacer{
+        width: 1em;
+        height: 1em;
+        display: block;
+
+    } */
+
+}
+
+
+/* 765px */
+@media(min-width:765px){
+    #login__text{
+        font-size: 4em;
+        top: -1.6em;
+        left: 1.45em;
+    }
+
+    .login-box form button::before{
+        width: 60%;
+    }
+
+    .watermark{
+        left: 1em; 
+        top: -0.5em;
+        font-size: 4em;
+    }
+    .login-box{
+        bottom: -9em;
+        left: 4.8em;
+        width:45%;
+    }
+    .blend_layer{
+        bottom:7em ;
+        left: 4.8em;
+        width: 45%;
+    }
+    .login-box form button{
+        margin-left: 4em;
+    }
+    .bg-background{
+        background-position: 0% 1%;
+    }
+
+    .social li img {
+        width: 1.25em;
+        height: 1.25em;
+    }
+
+}
+
+/* 1015px */
+@media(min-width:965px){
+    #login__text{
+        font-size: 4.5em;
+        top: -1.8em;
+        left: 1.3em;
+    }
+    .login-box form button::before{
+        width: 64%;
+    }
+
+    .watermark{
+        left: 1em; 
+        top: -1em;
+        font-size: 5em;
+    }
+    .login-box{
+        bottom: -11.7em;
+        left: 6.3em;
+        width:35%;
+    }
+    .blend_layer{
+        bottom:6em ;
+        left: 6.3em;
+        width: 35%;
+    }
+    .login-box form button{
+        margin-left: 7em;
+    }
+    .social li img {
+        width: 1.45em;
+        height: 1.45em;
+    }
+
+    header{
+        margin: 1% 0% 0% 3%;
+    }
+    .bg-background{
+        width:58%;
+        background-position: 0% 1%;
+    }
+    .login-box form button{
+        width: 30%;
+    }
+
+}
+
+/* 1320 */
+@media(min-width:1320px){
+    #login__text{
+        font-size: 6em;
+        top: -1.8em;
+        left: 1.2em;
+    }
+    .watermark{
+        left: 1em; 
+        top: -1.3em;
+        font-size: 6em;
+    }
+    .login-box form button{
+        margin-left: 9em;
+    }
+    .bg-background{
+        width:60%;
+        background-position: 0% 1%;
+    }
+    .login-box form button span{
+        padding-left: 0.3em;
+    }
+    .login-box form button{
+        width: 27%;
+    }
+
+}
+/* 1465 */
+@media(min-width:1465px){
+    #login__text{
+        font-size: 6.5em;
+        top: -1.8em;
+        left: 1.6em;
+    }
+    .bg-background{
+        width:63%;
+        background-position: 0% 1%;
+    }
+    .login-box form button{
+        margin-left: 9em;
+    }
+    .login-box form button{
+        width: 25%;
+    }
+
+}
